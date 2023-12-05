@@ -1,3 +1,9 @@
+const header= document.querySelector("header");
+
+window.addEventListener ("scroll", function() {
+  header.classList.toggle ("sticky", window.scrollY  > 0);
+});
+
 let menu = document.querySelector('#menu-icon');
 let navbar= document.querySelector('.navbar');
 
@@ -24,3 +30,4 @@ sr.reveal('.main-btn',{delay:860, origin: 'left'});
 sr.reveal('.share',{delay:950, origin: 'bottom'});
 
 sr.reveal('.home-img',{delay:1000, origin: 'right'});
+
