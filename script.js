@@ -12,6 +12,11 @@ menu.onclick = () => {
   navbar.classList.toggle('open');
 };
 
+window.onscroll = () => {
+  menu.classList.toggle('bx-x');
+  navbar.classList.toggle('open');
+};
+
 const sr = ScrollReveal ({
   distance: '40px',
   duration: 2500,
